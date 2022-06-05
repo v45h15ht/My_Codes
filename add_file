@@ -1,2 +1,6 @@
 this is new file
+<<<<<<< HEAD
 this is proposed change 1
+=======
+this is edit 1
+>>>>>>> 5e4a1c0e65fd5f271ad02e4398458e0d04445d77
