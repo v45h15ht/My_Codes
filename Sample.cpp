@@ -65,36 +65,8 @@ typedef vector<int> vint;
 typedef vector<string> vs;
 typedef vector<vi> vvi;
 
-const int N_1 = 100005;		// No of elements
-vi parent(N_1), dsize(N_1);
-
-void make_set(ll v){
-	parent[v] = v;
-	dsize[v] = 1;
-}
-
-ll find_set(ll v){
-	if(parent[v] == v)
-		return v;
-	return parent[v] = find_set(parent[v]);
-}
-
-void union_set(ll a, ll b){
-	a = find_set(a);
-	b = find_set(b);
-	if(a!=b){
-		if(dsize[a]<dsize[b]){
-			ll temp = a;
-			a = b;
-			b = temp;
-		}
-		parent[b] = a;
-		dsize[a] += dsize[b];
-	}	
-}
-
 void solve(){
-    
+
 }
 
 int main (){
@@ -106,6 +78,6 @@ int main (){
     cin>>t;
     while(t--)
         solve();
-
+ 
     return 0;
 }
