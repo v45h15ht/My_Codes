@@ -50,9 +50,6 @@ void __f(const char *names, Arg1 &&arg1, Args &&... args) {
 }
 #define debug(...) cout<<"Debug : "; __f(#__VA_ARGS__, __VA_ARGS__)
 
-auto clk=clock();
-mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
-
 const ll INF = 1e18L+5;
 const int d4i[4]={-1, 0, 1, 0}, d4j[4]={0, 1, 0, -1};
 const int d8i[8]={-1, -1, 0, 1, 1, 1, 0, -1}, d8j[8]={0, 1, 1, 1, 0, -1, -1, -1};
